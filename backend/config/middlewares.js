@@ -10,7 +10,7 @@ module.exports = [
   },
   // Add the CSP middleware with proper configuration
   {
-    name: 'strapi::helmet',
+    name: 'helmet',
     enabled: true,
     config: {
       contentSecurityPolicy: {
