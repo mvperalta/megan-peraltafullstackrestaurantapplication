@@ -1,7 +1,13 @@
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    enabled: true,
+    params: {
+      origin: ['https://meganperalta-fullstackrestaurantapp-kr7t2uvup-mvperalta.vercel.app'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',

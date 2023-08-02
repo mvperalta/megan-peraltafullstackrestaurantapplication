@@ -52,8 +52,8 @@ function DishCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-          src={`${process.env.STRAPI_URL || "http://localhost:1337"}${
-            data.attributes.image.data.attributes.url
+          src={`${process.env.STRAPI_URL || "https://strapi-1csg.onrender.com"}${
+          data.attributes.image.data.attributes.url
           }`}
           alt=""
         />
