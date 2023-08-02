@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', '127.0.0.1'),
+      host: env('DATABASE_HOST', 'dpg-cj3uk3liuie55pntu7qg-a'),
       port: env.int('DATABASE_PORT', 5432),
       database: env('DATABASE_NAME', 'nextapp_okyp'),
       user: env('DATABASE_USERNAME', 'myapp'),
