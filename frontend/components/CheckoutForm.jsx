@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Cookie from "js-cookie";
-import { client } from "... @/pages/_app.js";
+import { client } from "@/pages/_app.js";
 import { gql } from "@apollo/client";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { useAppContext } from "... @/context/AppContext";
+import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";
-import { useInitialRender } from "... @/utils/useInitialRender";
+import { useInitialRender } from "@/utils/useInitialRender";
 
 const options = {
   style: {

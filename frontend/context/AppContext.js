@@ -1,7 +1,7 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import Cookie from "js-cookie";
 import { gql } from "@apollo/client";
-import { client } from "... @/pages/_app.js";
+import { client } from "../pages/_app.js";
 
 const AppContext = createContext();
 

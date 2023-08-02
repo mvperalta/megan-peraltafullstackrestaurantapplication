@@ -1,6 +1,6 @@
-import { useAppContext } from "... @/context/AppContext";
+import { useAppContext } from "@/context/AppContext";
 import { useRouter } from "next/router";
-import { centsToDollars } from "... @/utils/centsToDollars";
+import { centsToDollars } from "@/utils/centsToDollars";
 
 function CartItem({ data }) {
   const { addItem, removeItem } = useAppContext();

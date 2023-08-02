@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { useAppContext } from "... @/context/AppContext";
+import { useAppContext } from "@/context/AppContext";
 import { gql, useMutation } from "@apollo/client";
 import Cookie from "js-cookie";
 
-import Form from "... @/components/Form";
-import Loader from "... @/components/Loader";
+import Form from "@/components/Form";
+import Loader from "@/components/Loader";
 
 const REGISTER_MUTATION = gql`
   mutation Register($username: String!, $email: String!, $password: String!) {
