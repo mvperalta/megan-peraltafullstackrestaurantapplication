@@ -14,6 +14,7 @@
     "@strapi/plugin-i18n": "4.3.4",
     "@strapi/plugin-users-permissions": "4.3.4",
     "@strapi/strapi": "4.3.4",
+    "cors": "^2.8.5",
     "pg": "^8.11.1",
     "pg-connection-string": "^2.6.1",
     "stripe": "^12.14.0"
