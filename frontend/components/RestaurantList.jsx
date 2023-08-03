@@ -32,7 +32,7 @@ function RestaurantCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-          src={`https://strapi-1csg.onrender.com${
+          src={`https://strapi-dr7e.onrender.com${
             data?.attributes?.image?.data?.[0]?.attributes?.url || ""
           }`}
           alt=""
