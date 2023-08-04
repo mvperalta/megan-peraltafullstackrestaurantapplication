@@ -1,7 +1,15 @@
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    enabled: true,
+    // Here you can configure CORS options
+    allowedOrigins: ['https://megan-peraltafullstackrestaurantapplication.vercel.app'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedMethods: ['GET', 'POST', 'PUT', 'DELETE'],
+    // ...
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
