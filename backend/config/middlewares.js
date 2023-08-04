@@ -1,15 +1,6 @@
 module.exports = [
   'strapi::errors',
-  'strapi::security',
-  {
-    name: 'strapi::cors',
-    enabled: true,
-    // Here you can configure CORS options
-    allowedOrigins: ['https://megan-peraltafullstackrestaurantapplication.vercel.app'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    allowedMethods: ['GET', 'POST', 'PUT', 'DELETE'],
-    // ...
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
@@ -17,4 +8,30 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'market-assets.strapi.io',
+            'render-strapi-backend.s3.us-east-2.amazonaws.com',
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'market-assets.strapi.io',
+            'render-strapi-backend.s3.us-east-2.amazonaws.com',
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
 ];
