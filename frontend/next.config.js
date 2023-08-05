@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", "https://strapi-drr3.onrender.com/", "myrestaurantimagesbucket.s3.amazonaws.com"],
     loader: "default",
     path: "/_next/image",
     disableStaticImages: true,
