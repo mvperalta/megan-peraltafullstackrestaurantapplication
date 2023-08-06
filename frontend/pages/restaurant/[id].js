@@ -52,7 +52,7 @@ function DishCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-          src={`${process.env.STRAPI_URL || "https://strapi-dr7e.onrender.com"}${
+          src={`${process.env.STRAPI_URL || "https://strapi-drr3.onrender.com"}${
           data.attributes.image.data.attributes.url
           }`}
           alt=""
